@@ -1,9 +1,33 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Compare Wear OS watches | WearOS Index</title><meta name="description" content="Compare Wear OS watches by documented software, update support, and firmware evidence."><link rel="canonical" href="https://iachimciucprojects-netizen.github.io/WearOS-Index/"><link rel="stylesheet" href="style.css"><script src="compare-data.js" defer></script><script src="compare.js" defer></script></head>
-<body><main><p class="badge" data-msg="badge">WEAROS INDEX · WATCH COMPARISON</p><h1 data-msg="title">Compare Wear OS watches</h1>
-<p class="intro" data-msg="intro">Select two or three watches from 54 models and variants. Compare 18 criteria with links to the evidence.</p>
-<section aria-labelledby="compare"><p><a class="guide-entry" id="guide-link" href="guide/en/" data-msg="guide">How to use this site</a></p><h2 id="compare" data-msg="choose">Choose your watches</h2><div class="languages" hidden><label><span data-msg="lang">Language</span><select id="language"><option value="en">English</option><option value="ru">Русский</option><option value="ro">Română</option></select></label></div>
-<div class="chooser">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Compare Wear OS watches | WearOS Index</title><meta name="description" content="Compare Wear OS watches by documented software, update support, and firmware evidence."><link rel="canonical" href="https://iachimciucprojects-netizen.github.io/WearOS-Index/"><link rel="stylesheet" href="style.css?v=workbench-1"><script src="compare-data.js" defer></script><script src="compare.js?v=workbench-1" defer></script></head>
+<body class="comparison">
+<header class="mast"><div class="mast-inner">
+  <a class="wordmark" href="./" aria-label="WearOS Index"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><path d="M11 3h6m-6 22h6M24 12v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="14" cy="14" r="8.5" stroke="currentColor" stroke-width="1.5"/><path d="M14 10v4l2 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>WearOS Index</a>
+  <div class="site-tools"><a id="guide-link" href="guide/en/" data-msg="guide">Site guide</a>
+  <div class="languages" role="group" aria-label="Language" hidden>
+    <button type="button" data-lang="en" lang="en" aria-label="English" aria-pressed="true">EN</button>
+    <button type="button" data-lang="ru" lang="ru" aria-label="Русский" aria-pressed="false">RU</button>
+    <button type="button" data-lang="ro" lang="ro" aria-label="Română" aria-pressed="false">RO</button>
+  </div></div>
+</div></header>
+<main id="content">
+<header class="intro-block">
+ <div><h1 data-msg="title">Compare Wear OS watches</h1>
+ <p class="intro" data-msg="intro">Choose up to three watches. Check specs, update support and firmware against the original sources.</p></div>
+ <div class="instrument" aria-hidden="true">
+  <svg width="128" height="128" viewBox="0 0 128 128" fill="none"><circle cx="64" cy="64" r="58" stroke="currentColor" opacity=".28"/><circle cx="64" cy="64" r="45" stroke="currentColor" opacity=".25"/><path d="M64 6v12m0 92v12M6 64h12m92 0h12M23 23l7 7m68 68 7 7m0-82-7 7M30 98l-7 7" stroke="currentColor"/><path d="M64 34v30l20 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="64" cy="64" r="3" fill="currentColor"/></svg>
+ </div>
+</header>
+<section aria-labelledby="compare">
+<div class="compare-toolbar"><h2 id="compare" data-msg="choose">Choose watches</h2><span class="catalog-count" data-msg="count">54 models &amp; variants</span></div>
+<div class="pickers" id="pickers" hidden></div>
+<dialog id="watch-picker" aria-labelledby="picker-title">
+ <div class="picker-head"><h2 id="picker-title">Choose a watch</h2><button type="button" id="picker-close" data-extra="close">Close</button></div>
+ <label class="search-label" for="watch-search" data-extra="search">Search by model or brand</label>
+ <input type="search" id="watch-search" autocomplete="off" autofocus>
+ <p id="watch-count" aria-live="polite"></p><div id="watch-results"></div>
+</dialog>
+<div class="chooser" id="native-chooser">
 <label><span data-msg="one">First watch</span><select id="first"><option value="pixel-watch-5">Google Pixel Watch 5 (45 mm)</option><option value="galaxy-watch9">Samsung Galaxy Watch9 (44 mm)</option><option value="oppo-watch-x3">OPPO Watch X3 (OWWE261)</option><option value="ticwatch-pro-5">Mobvoi TicWatch Pro 5 (Original)</option></select></label>
 <label><span data-msg="two">Second watch</span><select id="second"><option value="pixel-watch-5">Google Pixel Watch 5 (45 mm)</option><option value="galaxy-watch9" selected>Samsung Galaxy Watch9 (44 mm)</option><option value="oppo-watch-x3">OPPO Watch X3 (OWWE261)</option><option value="ticwatch-pro-5">Mobvoi TicWatch Pro 5 (Original)</option></select></label>
 <label><span data-msg="three">Third watch (optional)</span><select id="third"><option value="">None</option><option value="pixel-watch-5">Google Pixel Watch 5 (45 mm)</option><option value="galaxy-watch9">Samsung Galaxy Watch9 (44 mm)</option><option value="oppo-watch-x3">OPPO Watch X3 (OWWE261)</option><option value="ticwatch-pro-5">Mobvoi TicWatch Pro 5 (Original)</option></select></label>
