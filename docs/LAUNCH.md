@@ -1,10 +1,9 @@
-# WearOS Index web and Telegram operations
+# WearOS Index web publishing
 
-The comparison is a static GitHub Pages site. The Telegram Mini App and Google Search Console are separate setup steps.
+WearOS Index is a standalone static site published with GitHub Pages. Comparison links work in a browser without an account.
 
-1. Publish GitHub Pages from the default branch and `/docs`. Confirm the site returns HTTP 200 without authentication, assets load on mobile, and all comparison cards are usable.
-2. Verify the deployed URL prefix in Google Search Console using a permitted verification method. Submit `sitemap.xml` and inspect the home page plus the first substantive device pages. If the canonical host changes, update absolute URLs in the canonical elements and sitemap first. Indexing is not guaranteed.
-3. Register a dedicated Telegram Mini App via BotFather and set its HTTPS URL to the same site. Pass supported model slugs in `startapp`, for example `pixel-watch-5__galaxy-watch9__oppo-watch-x3`. The prototype parses the launch parameter, and link sharing currently copies a regular web URL. Verify real Telegram launch on mobile and desktop before adding a Telegram share button or promising this route works. No bot token or Telegram identity is needed for reading a comparison.
-4. Keep the first release read-only and rating-free. Add scenario-specific, published criteria only when comparable tests exist; show the source, sample count, and when it was checked. Do not turn missing evidence into a bad score. If public votes are later added, use server-side validation of Telegram init data and rate limits. The comparison is for watches only. The comparison includes every entry in the device directory snapshot. `compare-data.js` records coverage, official sources and English/Russian/Romanian display text. Attach exact-variant evidence before adding specs, and keep missing fields null. Language choice persists locally and is included in web share URLs.
+1. Publish from the default branch and `/docs`. Check that the site, comparison table, and all three guides work on desktop and mobile.
+2. To monitor Google Search, verify the deployed URL prefix in Search Console and submit `sitemap.xml`. If the canonical host changes, update canonical URLs and the sitemap first. Submission does not guarantee indexing.
+3. Keep the comparison evidence-based. `compare-data.js` holds device variants, sources, and labels in English, Russian, and Romanian. Add specifications only with a source for the exact variant. Leave unverified fields blank rather than assigning a score. Share a comparison using its web link; the selected models and language are included.
 
-References: [GitHub Pages publishing](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site), [Google Search indexing](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl), [Telegram Mini Apps](https://core.telegram.org/bots/webapps).
+References: [GitHub Pages publishing](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site), [Google Search indexing](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl).

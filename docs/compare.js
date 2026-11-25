@@ -9,20 +9,17 @@ const share = document.querySelector("#share");
 const status = document.querySelector("#status");
 const matrix = document.querySelector("#matrix");
 const q = new URLSearchParams(location.search);
-const telegram = window.Telegram?.WebApp;
 const langId = s => String(s || "").toLowerCase().split(/[-_]/)[0];
 let saved;
 try { saved = localStorage.getItem("wearos-language"); } catch {}
-let lang = [q.get("lang"), saved, telegram?.initDataUnsafe?.user?.language_code, navigator.language].map(langId).find(x => Object.hasOwn(d.ui,x)) || "en";
+let lang = [q.get("lang"), saved, navigator.language].map(langId).find(x => Object.hasOwn(d.ui,x)) || "en";
 const byId = new Map(d.models.map(m => [m.id,m]));
 const groups = new Map();
 for (const m of d.models) { if (!groups.has(m.brand)) groups.set(m.brand,[]); groups.get(m.brand).push(m); }
 const get = (key, replacements = {}) => Object.entries(replacements).reduce((s,[k,v])=>s.replace("{"+k+"}",v), d.ui[lang][key]);
 const el = (tag, text) => {const o=document.createElement(tag); if(text!==undefined)o.textContent=text; return o;};
 const a = (text, url, cls) => {const o=el("a",text);o.href=url;if(cls)o.className=cls;return o;};
-const launch = telegram?.initDataUnsafe?.start_param || q.get("tgWebAppStartParam") || "";
-const pair = launch.split("__");
-const inbound = ["first","second","third"].map((key,i)=>q.get(key)||pair[i]||"");
+const inbound = ["first","second","third"].map(key=>q.get(key)||"");
 const valid = [...new Set(inbound.filter(id=>byId.has(id)))];
 const initial = [valid[0]||"pixel-watch-5",valid[1]||["galaxy-watch9","oppo-watch-x3"].find(id=>id!==valid[0]),valid[2]||""];
 function setOptions() {
