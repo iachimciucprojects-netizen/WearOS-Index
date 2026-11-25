@@ -1,0 +1,42 @@
+name: Compatibility report
+description: Report one reproducible result on a specific Wear OS device.
+title: "[Compatibility]: "
+body:
+  - type: input
+    id: watch
+    attributes:
+      label: Watch model and variant
+      placeholder: "Mobvoi TicWatch Pro 5 (dace)"
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Wear OS version and build
+      placeholder: "Wear OS 4, build ..."
+    validations:
+      required: true
+  - type: input
+    id: item
+    attributes:
+      label: App, firmware, or feature tested
+      description: Include exact version and source, when applicable.
+    validations:
+      required: true
+  - type: dropdown
+    id: result
+    attributes:
+      label: Result
+      options:
+        - Works
+        - Partially works
+        - Does not work
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Steps, expected behavior, and actual behavior
+      description: Include the test date. Remove tokens, serial numbers, and private information before sharing logs or screenshots.
+    validations:
+      required: true
