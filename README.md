@@ -2,6 +2,8 @@
 
 A community-maintained index of **Wear OS wearables from any brand**, from current devices to historical Android Wear. Find devices, track updates and public source code, and share reproducible compatibility results.
 
+**Web:** [Compare watches](https://iachimciucprojects-netizen.github.io/WearOS-Index/) · [English guide](https://iachimciucprojects-netizen.github.io/WearOS-Index/guide/en/) · [Инструкция](https://iachimciucprojects-netizen.github.io/WearOS-Index/guide/ru/) · [Ghid în română](https://iachimciucprojects-netizen.github.io/WearOS-Index/guide/ro/)
+
 **Start here:** [Device directory](devices/README.md) · [Suggest a device](https://github.com/iachimciucprojects-netizen/WearOS-Index/issues/new?template=device.yml) · [Report a result](https://github.com/iachimciucprojects-netizen/WearOS-Index/issues/new?template=compatibility.yml) · [Contributing](CONTRIBUTING.md)
 
 ## Devices and updates
