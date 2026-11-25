@@ -14,6 +14,10 @@ A community-maintained field guide to **what actually works on Wear OS**. Find a
 - [Wear OS platform release notes](https://developer.android.com/wear/releases/): Google's platform-level changes, not a device rollout tracker.
 - [Wear OS 4 behavior changes](https://developer.android.com/training/wearables/versions/4/changes): Wear OS 4 is based on Android 13 (API 33).
 
+## Updates and source tracking
+
+Start with [TicWatch Pro 5 updates and source code](devices/ticwatch-pro-5.md#updates-and-source-code). Each device should keep these facts separate: **last vendor announcement**, **newest build actually observed**, **security patch date**, and **published source revision**. An unverified field stays blank or marked unknown. The date we checked a source is not the date an update shipped.
+
 ## Apps and utilities
 
 | Project | What it does | Evidence |

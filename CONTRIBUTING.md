@@ -12,6 +12,14 @@ Use the [compatibility report form](https://github.com/iachimciucprojects-netize
 - Test date and a public source if available. Include phone model/OS or region only if it matters.
 - Mark it **works**, **partially works**, or **does not work**. Write **not tested** for unknown features; do not infer support on related watches.
 
+## Pick a first contribution
+
+- **Five minutes, no coding:** copy the model, Wear OS version, build and patch date from your watch's About screen into a report. It is fine if no update is offered.
+- **One small test:** try one app feature and report what happened. Examples: whether an MP3 already on the watch plays over Bluetooth, or whether Workout displays a metric on the secondary LCD.
+- **One source link:** send an official update note for an exact model, or open a pull request to add it. Include the announcement date and the build ID if the source provides one.
+
+There is no need for repository access. Use an issue for observations or a fork and pull request for edits. Maintainers can add the result with attribution, or omit your name if requested. Separate confirmed observations from assumptions about related devices.
+
 ## Add an app, device or firmware entry
 
 Use the primary link (official docs, store listing or upstream repository), describe the specific use in one sentence, and say whether compatibility is documented or tested. Record a broken link or stale claim rather than silently removing mixed results.
