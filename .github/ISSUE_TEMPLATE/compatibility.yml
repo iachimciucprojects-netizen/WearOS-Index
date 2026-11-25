@@ -6,7 +6,8 @@ body:
     id: watch
     attributes:
       label: Watch model and variant
-      placeholder: "Mobvoi TicWatch Pro 5 (dace)"
+      placeholder: "Brand, model, and SKU (if known)"
+      description: Include the region and Bluetooth/LTE variant if relevant.
     validations:
       required: true
   - type: input

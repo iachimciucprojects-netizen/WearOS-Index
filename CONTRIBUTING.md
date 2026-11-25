@@ -4,7 +4,7 @@ A useful contribution answers a narrow question someone else can repeat: **what 
 
 ## Share a result
 
-Use the [compatibility report form](https://github.com/iachimciucprojects-netizen/WearOS-Index/issues/new?template=compatibility.yml) or open a pull request against the appropriate device page. One test per report is ideal. Include:
+Any brand, region, or wearable form factor is in scope if the exact device is documented to run Wear OS or Android Wear. For a missing device, use the [device suggestion form](https://github.com/iachimciucprojects-netizen/WearOS-Index/issues/new?template=device.yml); personal ownership is not required. For a first-hand test, use the [compatibility report form](https://github.com/iachimciucprojects-netizen/WearOS-Index/issues/new?template=compatibility.yml) or open a pull request against the appropriate device page. One test per report is ideal. Include:
 
 - Exact model and variant; hardware codename if known.
 - Wear OS version and build number; app version and source.

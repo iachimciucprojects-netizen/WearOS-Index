@@ -1,0 +1,23 @@
+name: Add a Wear OS device
+description: Suggest a missing model, variant, or wearable form factor.
+title: "[Device]: "
+body:
+  - type: input
+    id: model
+    attributes:
+      label: Manufacturer, model, and variant
+      description: Include the SKU, region, and radio variant when known.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source confirming Wear OS or Android Wear
+      description: Link to the exact model in vendor documentation or a reproducible device report.
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: First known OS, updates, or public sources
+      description: Optional. Keep rollout announcements and personally observed builds separate. Do not post serial numbers or account details.

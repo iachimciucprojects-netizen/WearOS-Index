@@ -1,22 +1,19 @@
 # WearOS Index
 
-A community-maintained field guide to **what actually works on Wear OS**. Find apps and tools, check device-specific compatibility, and share results others can reproduce.
+A community-maintained index of **Wear OS wearables from any brand**, from current devices to historical Android Wear. Find devices, track updates and public source code, and share reproducible compatibility results.
 
-**Start here:** [TicWatch Pro 5 device page](devices/ticwatch-pro-5.md) · [Report a compatibility result](https://github.com/iachimciucprojects-netizen/WearOS-Index/issues/new?template=compatibility.yml) · [Contributing](CONTRIBUTING.md)
+**Start here:** [Device directory](devices/README.md) · [Suggest a device](https://github.com/iachimciucprojects-netizen/WearOS-Index/issues/new?template=device.yml) · [Report a result](https://github.com/iachimciucprojects-netizen/WearOS-Index/issues/new?template=compatibility.yml) · [Contributing](CONTRIBUTING.md)
 
 ## Devices and updates
 
-| Device | Stock software | Community status |
-|---|---|---|
-| [Mobvoi TicWatch Pro 5](devices/ticwatch-pro-5.md) (`dace`) | Wear OS 4 update documented by Mobvoi | First device page: dual-display notes, app reports, and an experimental alternative OS |
+[Browse 54 model and variant entries across 17 manufacturers](devices/README.md), including Google Pixel Watch, Samsung Galaxy Watch, OnePlus, OPPO, Xiaomi, Mobvoi, and legacy Android Wear. The [TicWatch Pro 5 profile](devices/ticwatch-pro-5.md) is one detailed example of how evidence is recorded.
 
-- [Mobvoi upgrade history](https://www.mobvoi.com/uk/pages/upgrade-history): model-specific update and build notes. An update announcement does not establish the build installed on an individual watch.
 - [Wear OS platform release notes](https://developer.android.com/wear/releases/): Google's platform-level changes, not a device rollout tracker.
-- [Wear OS 4 behavior changes](https://developer.android.com/training/wearables/versions/4/changes): Wear OS 4 is based on Android 13 (API 33).
+- [Google's manufacturer help directory](https://support.google.com/wearos/answer/10106605): support and companion-app links; verify the exact model separately.
 
 ## Updates and source tracking
 
-Start with [TicWatch Pro 5 updates and source code](devices/ticwatch-pro-5.md#updates-and-source-code). Each device should keep these facts separate: **last vendor announcement**, **newest build actually observed**, **security patch date**, and **published source revision**. An unverified field stays blank or marked unknown. The date we checked a source is not the date an update shipped.
+See the [manufacturer update and firmware sources](devices/README.md#rollouts-firmware-and-regional-variants). Each device should keep these facts separate: **last vendor announcement**, **newest build actually observed**, **security patch date**, and **published source revision**. An unverified field stays blank or marked unknown. The date we checked a source is not the date an update shipped.
 
 ## Apps and utilities
 
